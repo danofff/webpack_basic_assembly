@@ -1,16 +1,6 @@
-import "./styles/main.scss";
+import { useState } from "react";
+import ReactDOM from "react-dom";
 
-const someObject = {
-  sameData: true,
-  quantity: 3,
-  otherPrice: 43,
-};
+import App from "./components/App";
 
-const someNewObject = {
-  ...someObject,
-  quatity: 5,
-  newProperty: 10,
-};
-
-console.log(someObject);
-console.log(someNewObject);
+ReactDOM.render(<App />, document.getElementById("react"));
